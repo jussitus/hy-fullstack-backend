@@ -5,6 +5,7 @@ if (process.argv.length !== 5 && process.argv.length !== 3) {
   process.exit(1)
 }
 
+// i didn't want to include the address so the password is actually from .env and this file is a bit outdated (ex 3.12)
 const url = process.env.MONGODB_URI
 
 mongoose.set('strictQuery', false)
